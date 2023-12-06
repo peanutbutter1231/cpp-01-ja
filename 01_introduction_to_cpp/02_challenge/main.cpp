@@ -1,6 +1,6 @@
 #include<iostream>
 
-int dummy_main() {
+int main() {
     // == や < などの関係演算子を使用して次の式が `true` になるようにしてください。
     bool expr1 {6 < 7};
     bool expr2 {10 > 9};
