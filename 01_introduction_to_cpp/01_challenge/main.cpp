@@ -1,7 +1,7 @@
 // 不足している値、データ型、その他のコードを追加してプログラムを完成させてください。
 #include<iostream>
 
-int dummy_main() {
+int main() {
     int myNumber = 0;
 
     int anotherNumber = 5;
