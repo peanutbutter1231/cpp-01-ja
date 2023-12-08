@@ -7,9 +7,9 @@ int dummy_main() {
     // プログラムをコンパイルして実行してください (エラーが出ない状態にしてください)。
 
     // データに適した型を使用して、次の変数の宣言と初期化を完成させてください。
-    int pizzaSlices = 12;
-    double pi = 3.14159f;
-    long starsInTheUniverse = 1234567890LL;
+    int pizzaSlices = 12u;
+    float pi = 3.14159f;
+    long long starsInTheUniverse = 1234567890LL;
     char aLetter = 'k';
     std::string aWord = "kaleidescope";
     double veryPrecisePi = 3.14159265358979;
@@ -18,11 +18,11 @@ int dummy_main() {
 
     // 新しい変数を3つ宣言して初期化してください (3行で記述、1行につき1つの変数)。各変数のデータ型が異なるようにしてください。
     // ここに変数1を記述
-    int a;
+    int a = 1;
     // ここに変数2を記述
-    char b;
+    char b = 'b';
     // ここに変数3を記述
-    bool c;
+    bool c = false;
 
     // 正しいデータ型を指定して次の配列を完成させてください。
     int myArray[] = {1, 2, 3, 4};
@@ -36,15 +36,15 @@ int dummy_main() {
 
     // static_castを使用して、`sizeOfCesiumAtom` をint型に変更してください。`static_cast` は、sizeOfCesiumAtomの次の行に記述してください。
     double sizeOfCesiumAtom = 0.267;
-    int sizeOfCesiumAtomCast{static_cast<int>(sizeOfCesiumAtom)};
+    int sizeOfCesiumAtomCast = static_cast<int>(sizeOfCesiumAtom);
 
     // 3つの定数変数を作成してください。データ型はどれでもかまいませんが、各変数のデータ型が異なるようにしてください。
     // ここに変数1を記述
-    int x = 1;
+    const int x {1};
     // ここに変数2を記述
-    char y = 'y';
+    const double y {0.5};
     // ここに変数3を記述
-    bool z = false;
+    const bool z {true};
 
     // 次の行を変更する必要はありません。これらはプログラムの出力をチェックするためのものです。
     std::cout << pizzaSlices << std::endl;
