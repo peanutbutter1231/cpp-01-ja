@@ -1,5 +1,5 @@
 #include "temp_sensor.h"
 
-float readTemperature() {
+float Sensor::readTemperature() {
     return 25.5;
 }

@@ -5,9 +5,7 @@
 #include <iostream>
 #include "temp_sensor.h"
 
-float readTemperature();
-
 int main() {
-    std::cout << "Temperature reading: " << readTemperature() << std::endl;
+    std::cout << "Temperature reading: " << Sensor::readTemperature() << std::endl;
     return 0;
 }
