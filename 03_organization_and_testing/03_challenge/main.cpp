@@ -43,10 +43,10 @@ int main()
         {
             std::cout << "Result: " << MathOps::division(a, b) << std::endl;
         }
-        else
-        {
-            std::cout << "Error!" << std::endl;
-        }
+//        else
+//        {
+//            std::cout << "Error!" << std::endl;
+//        }
     }
 
     return 0;
