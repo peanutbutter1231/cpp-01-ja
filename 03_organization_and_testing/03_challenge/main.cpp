@@ -15,38 +15,26 @@ int main()
     std::cout << "Enter a calculation: ";
     std::cin >> a >> c >> b;
 
-//    std::cout << "Input two numbers!" << std::endl;
-//    std::cin >> a >> b;
-//    std::cout << "Input Operator! '+'or'-'or'/'or'*'" << std::endl;
-//    std::cin >> c;
+    //    std::cout << "Input two numbers!" << std::endl;
+    //    std::cin >> a >> b;
+    //    std::cout << "Input Operator! '+'or'-'or'/'or'*'" << std::endl;
+    //    std::cin >> c;
 
-    if (c == '/' && b == 0)
+    if (c == '+')
     {
-//        std::cout << "Error!" << std::endl;
-        throw std::runtime_error("Division by zero");
+        std::cout << "Result: " << MathOps::addition(a, b) << std::endl;
     }
-    else
+    else if (c == '-')
     {
-        if (c == '+')
-        {
-            std::cout << "Result: " << MathOps::addition(a, b) << std::endl;
-        }
-        else if (c == '-')
-        {
-            std::cout << "Result: " << MathOps::subtraction(a, b) << std::endl;
-        }
-        else if (c == '*')
-        {
-            std::cout << "Result: " << MathOps::multiplication(a, b) << std::endl;
-        }
-        else if (c == '/')
-        {
-            std::cout << "Result: " << MathOps::division(a, b) << std::endl;
-        }
-//        else
-//        {
-//            std::cout << "Error!" << std::endl;
-//        }
+        std::cout << "Result: " << MathOps::subtraction(a, b) << std::endl;
+    }
+    else if (c == '*')
+    {
+        std::cout << "Result: " << MathOps::multiplication(a, b) << std::endl;
+    }
+    else if (c == '/')
+    {
+        std::cout << "Result: " << MathOps::division(a, b) << std::endl;
     }
 
     return 0;

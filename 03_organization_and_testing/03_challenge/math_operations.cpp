@@ -50,8 +50,15 @@ namespace MathOps
 
     float division(float a, float b)
     {
-        float result;
-        result = a / b;
-        return result;
+        if (b == 0)
+        {
+            throw std::runtime_error("Division by zero");
+        }
+        else
+        {
+            float result;
+            result = a / b;
+            return result;
+        }
     }
 }
